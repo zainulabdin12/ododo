@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+<title>Liberty Electronics</title>
+<style>
+  body{
+    color: #000;
+  }
+  .card{
+    height: 225px;
+    text-align: center;
+  }
+  
+  a{
+    color: #000;
+    text-decoration: none;
+    
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  footer{
+    background-color: black;
+  }
+  
+</style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark d-flex fixed-top" style="background-color: black; opacity: 0.8;" id="navbar"> 
+    <a 
+    href="imgs/logole.jpg" 
+    class="navbar-brand " id="logo">
+     <h3 style="margin-top: 10px;"><b><img src="imgs/logole.jpg" alt="" style="width: 100px; height: 60px; margin-top: -10px; opacity: 1; z-index: 1;"> LIBERTY Electronics</b></h2></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation" style="z-index: 1;">
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item-active nav-item-drop d-flex">
+            <a href="aboutus.html" class="nav-link" style="margin-left: 70px;">ABOUT US</a>
+          </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link active" style="margin-left: 70px;"><i class="bi bi-house-door-fill"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navabarDropdown" 
+                role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="margin-left: 70px;">
+            PRODUCTS
+            </a>
+                <ul class="dropdown-menu active"
+                aria-labelledby="navabarDropdown" style="height: 300px; width: 250px; background-color: #000; opacity: 1;">
+                    <li><a href="mobiles.html" class="dropdown-item">Mobiles</a></li>
+                    <li><a href="tvspage.html" class="dropdown-item">Televisions</a></li>
+                    <li><a href="fridges.html" class="dropdown-item">Refrigators</a></li>
+                    <li><a href="ac.html" class="dropdown-item">Air conditioners</a></li>
+                    <li><a href="fashiongagdets.html" class="dropdown-item">Fashion Gadgets</a></li>
+                    <li><a href="Drone.html" class="dropdown-item">Drones</a></li>
+                
+                   
+
+
+                
+                      
+                </ul>
+           
+            </li>
+            
+            <li class="nav-item-active nav-item-drop d-flex">
+                <a href="cart.html" class="nav-link h" style="margin-left: 70px;">
+                  <i class="bi bi-cart-check-fill"></i></a></span>
+            </li>
+            
+        </ul>
+        <div class="help">
+        <!-- <form action="" class="d-flex">
+            <input type="text"  id="navbarNav" class="form-control me-2" style="outline: none; width: 300px; height: 40px; margin-left: 100%;" placeholder="Search here...">
+        </div>
+        
+        <div class="">
+        <button type="button" id="navbarNav" class="btn btn-outline-dark searchbutton" style="background-color: black; color: white;  margin-left: 10px;"><b><i class="bi bi-search"></i></b></button>
+      </div>-->
+<!-- 
+          <div class="container-fluid" style="margin-bottom: 90px; margin-right: -200px;">
+            <button class="btn text-white" style="margin-left: 115px;"><a href="input.html">Login</a></button>
+          </div>  -->
+        </li>
+    </form>
+  </div>
+</nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark d-flex fixed-top text-white" style="background-color: black; opacity: 0.8;" id="navbar"> 
+        <a 
+        href="" 
+        class="navbar-brand " id="logo">
+         <h3 style="margin-top: 10px;"><b><img src="imgs/1.png" alt="" style="width: 100px; height: 60px; margin-top: -10px; opacity: 1; z-index: 1;"> LIBERTY Electronics</b></h2></a>
+
+            
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation">
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" style="margin-left: 30px;"><i class="bi bi-house-door-fill"></i></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navabarDropdown" 
+                    role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"
+                    style="margin-left: 30px;">
+                PRODUCTS
+                </a>
+                    <ul class="dropdown-menu active"
+                    aria-labelledby="navabarDropdown" style="height: 250px; overflow:scroll; width: 250px; background-color: #000;">
+                        <li><a href="#" class="dropdown-item">Mobiles</a></li>
+                        <li><a href="#" class="dropdown-item">Home Appliances</a></li>
+                        <li><a href="#" class="dropdown-item">Kitchen Appliances</a></li>
+                        <li><a href="#" class="dropdown-item">Others</a></li>
+                       
+
+
+                    
+                          
+                    </ul>
+               
+                </li>
+                <li class="nav-item-active nav-item-drop d-flex">
+                    <a href="#" class="nav-link h" style="margin-left: 30px;">
+                      <i class="bi bi-cart-check-fill"></i></a></span></div>
+                </li>
+            </ul>
+            <div class="help">
+            <form action="" class="d-flex">
+                <input type="text" class="form-control me-2" style="width: 300px; height: 40px;" placeholder="Search here..." style="height: 60px;">
+            </div>
+            
+            
+            <button type="button" class="btn btn-outline-dark searchbutton" style="background-color: grey; height: 40px; margin-top: 20px; margin-left: -30px;  margin-right: -120px;"><b><i class="bi bi-search"></i></b></button>
+
+            <li>
+                <a href=""><button style="margin-left: -0px; margin-bottom: 75px; margin-top: ; top: 25px; padding: 20; right: -5px;" class="btn text-white">Logout<i class="bi bi-box-arrow-right" id="logout"></i></button></a>
+            </li>
+        </div>
+        </form>
+    </nav> -->
+    <div class="" style="margin-top: 120px;">
+      <img src="imgs/orient.png" alt="" style="height: 25vh; width: 100%;"><br>
+        <img src="imgs/orient.png" alt="" style="border-radius: 50%; height: 20vh; margin-top: -80px; width: 150px;">
+      
+    </div>
+    <div class="container-fluid">
+        <!-- <head>
+            <h3 style="margin-top: 50px;"><b>BRAND DESCRIPTION</b></h3>
+        </head>
+        <table style="margin-left: ; margin-top: 5vh;">
+            <tr >
+                <td>
+                    <Ul><h4>SINCE 1985</h4>
+                    <li>Apple is a multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services.</li>
+                    <li>Apple's software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites.</li>
+                    <li>Apple's software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, est.</li>
+                    
+                    </Ul>
+                </td>
+            </tr>
+        </table>
+        </div>
+    </div> -->
+    <div class="container-fluid text-center">
+        <h3 style="margin-top: 50px; font-weight: bolder;"><b>PRODUCTS LISTING</b></h3>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-6 g-sm-3">
+            <div class="card hovereffect">
+                <img src="imgs/orient.jpeg" alt="" class="card-img img-fluid w-100 h-100" style="height: 300px; width: 100%">
+                <div class="overlay">
+                    <h2>Televisions</h2>
+                    
+                 </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-6 g-sm-3">
+            <div class="card hovereffect">
+                <img src="imgs/Orient DC Inverter OR-12CR.jpeg" alt="" class="card-img img-fluid w-100 h-100" style="height: 300px; width: 100%">
+                <div class="overlay">
+                    <h2>Air Conditioners</h2>
+                   
+                 </div>
+            </div>
+          </div>
+          
+        
+          <div class="col-lg-4 col-md-6 col-sm-6 g-sm-3">
+            <div class="card hovereffect">
+                <img src="imgs/smart.jpeg" alt="" class="card-img img-fluid w-100 h-100" style="height: 300px; width: 100%">
+                <div class="overlay">
+                    <h2>Refrigerators</h2>
+                   
+                 </div>
+            </div>
+          </div>
+       
+           
+            
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid text-center" >
+        <h2 style="margin-top: 50px; font-weight: bolder;"><b>PRODUCT CATALOGUE</b></h2>
+    </div>
+    <div class="container-fluid text-center">
+        <h3 style="margin-top: 20px; font-weight: bolder;"><b>Televisions</b></h3>
+    </div>
+    <div class="container ">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="card">
+                <img src="imgs/Orient Smart LED-24G.jpeg" alt="" class="card-img img-fluid h-75">
+                <div class="card-body">
+                    <a href="">Orient Smart LED-24G
+                     </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <div class="card">
+              <img src="imgs/Orient Smart LED-32G.jpeg" alt="" class="card-img img-fluid h-75">
+              <div class="card-body">
+                  <a href="">Orient Smart LED-32G</a>
+              </div>
+
+          </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+            <img src="imgs/Orient LED-50G.jpeg" alt=""  class="card-img img-fluid h-75">
+            <div class="card-body">
+                <a href="">Orient LED-50G</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card">
+          <img src="imgs/ORIENT ACTION 32s.jpeg" alt=""  class="card-img img-fluid h-75">
+          <div class="card-body">
+              <a href="">ORIENT ACTION 32s</a>
+          </div>
+
+      </div>
+  </div>    
+
+         
+          </div>
+      </div>
+     
+    <div class="container-fluid text-center mt-5">
+      <h3 style="margin-top: 20px; font-weight: bolder;"><b>Air Conditioners</b></h3>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3 col-md-4 col-sm-6">
+        <div class="card">
+            <img src="imgs/Orient DC Inverter OR-18CR.jpeg" alt="" class="card-img img-fluid h-75">
+            <div class="card-body">
+                <a href="">DC Inverter OR-18CR</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card">
+          <img src="imgs/Orient DC Inverter OR-12CR.jpeg" alt="" class="card-img img-fluid h-75">
+          <div class="card-body">
+              <a href=""> DC Inverter OR-24CR</a>
+          </div>
+
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card">
+        <img src="imgs/Dawlance DWAC-24M.jpeg" alt="" class="card-img img-fluid h-75">
+        <div class="card-body">
+            <a href=""> DC Inverter OR-12CR</a>
+        </div>
+
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card">
+      <img src="imgs/DWAC-18M2.jpeg" alt="" class="card-img img-fluid h-75">
+      <div class="card-body">
+          <a href="">DC Inverter OR-18CR
+          </a>
+      </div>
+
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card">
+      <img src="imgs/0.jpeg" alt=""  class="card-img img-fluid">
+      <div class="card-body">
+          <a href="">Orient DC Inverter OR-24CR</a>
+      </div>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <div class="container-fluid text-center mt-5">
+    <h3 style="margin-top: 20px; font-weight: bolder;"><b>Refrigators</b></h3>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card">
+          <img src="imgs/Orient OR-19B3.jpeg" alt="" class="card-img img-fluid h-75">
+          <div class="card-body">
+              <a href="">Orient OR-19B3</a>
+          </div>
+
+      </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-6">
+    <div class="card">
+        <img src="imgs/Orient OR-210B3.jpeg" alt=""  class="card-img img-fluid h-75">
+        <div class="card-body">
+            <a href="">Orient OR-210B3</a>
+        </div>
+
+    </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6">
+  <div class="card">
+      <img src="imgs/Orient OR-17B32.jpeg" alt=""  class="card-img img-fluid h-75">
+      <div class="card-body">
+          <a href="">Orient OR-17B3</a>
+      </div>
+
+  </div>
+</div>
+
+   
+
+ </div>
+</div>
+
+
+
+
+<div class="container-fluid my-5">
+
+  <!-- Footer -->
+<footer class="bg-black text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4 text-center">
+      <!-- Facebook -->
+      <a class="btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-facebook btn btn-outline-primary"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-twitter btn btn-outline-primary"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn-floating m-1" href="#!" role="button"
+        ><i class="bi bi-google btn btn-outline-warning"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-danger btn-floating m-1 ig" href="#!" role="button"
+        ><i class="bi bi-instagram"></i
+      ></a>
+
+   
+    </section>
+
+    <!-- Section: Form -->
+    <section class="text-center">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+           
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+          
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <!-- <section class="mb-4 text-center">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+        eum harum corrupti dicta, aliquam sequi voluptate quas.
+      </p>
+    </section> -->
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Customer Care</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Help Center</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">How to buy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Returns & Refunds</a>
+            </li>
+            <li>
+              <a href="" class="text-white">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Make Money With Us</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Sell On Liberty</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Liberty Affliate Marketing</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Dropshipping</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Work For us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Liberty</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Terms&Condition</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Liberty Exclusive</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Liberty Blogs</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Credentials</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">NTN Number : 4012118-6</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">STRN Number : 1700401211818</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Online Shopping App</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Liberty Physical Stores</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyrights Reserved By
+    <a class="text-white" href="index.html">Liberty</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+  
+</div>
+<!-- End of .container -->
+
+
+
+
+
+
+          </div>
+
+      </div> -->
+
+
+  </div>
+    
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

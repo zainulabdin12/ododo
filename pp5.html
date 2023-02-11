@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+<title>Liberty Electronics</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark d-flex fixed-top" style="background-color: black; opacity: 0.8;" id="navbar"> 
+    <a 
+    href="imgs/logole.jpg" 
+    class="navbar-brand " id="logo">
+     <h3 style="margin-top: 10px;"><b><img src="imgs/logole.jpg" alt="" style="width: 100px; height: 60px; margin-top: -10px; opacity: 1; z-index: 1;"> LIBERTY Electronics</b></h2></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation" style="z-index: 1;">
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item-active nav-item-drop d-flex">
+            <a href="aboutus.html" class="nav-link" style="margin-left: 70px;">ABOUT US</a>
+          </li>
+            <li class="nav-item">
+                <a href="compare.html" class="nav-link active" style="margin-left: 70px;"><i ondrag="ChangeText" class="bi bi-arrow-left-right comparebtn"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navabarDropdown" 
+                role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="margin-left: 70px;">
+            PRODUCTS
+            </a>
+                <ul class="dropdown-menu active"
+                aria-labelledby="navabarDropdown" style="height: 300px; width: 250px; background-color: #000; opacity: 1;">
+                <li><a href="mobiles.html" class="dropdown-item">Mobiles</a></li>
+                <li><a href="tvspage.html" class="dropdown-item">Televisions</a></li>
+                <li><a href="fridges.html" class="dropdown-item">Refrigators</a></li>
+              
+                <li><a href="ac.html" class="dropdown-item">Air conditioners</a></li>
+                <li><a href="fashiongagdets.html" class="dropdown-item">Fashion Gadgets</a></li>
+                <li><a href="Drone.html" class="dropdown-item">Drones</a></li>
+                   
+
+
+                
+                      
+                </ul>
+           
+            </li>
+            
+            <li class="nav-item-active nav-item-drop d-flex">
+                <a href="cart.html" class="nav-link h" style="margin-left: 70px;">
+                  <i class="bi bi-cart-check-fill"></i></a></span>
+            </li>
+            
+        </ul>
+        <div class="help">
+        <!-- <form action="" class="d-flex">
+            <input type="text"  id="navbarNav" class="form-control me-2" style="outline: none; width: 300px; height: 40px; margin-left: 100%;" placeholder="Search here...">
+        </div>
+        
+        <div class="">
+        <button type="button" id="navbarNav" class="btn btn-outline-dark searchbutton" style="background-color: black; color: white;  margin-left: 10px;"><b><i class="bi bi-search"></i></b></button>
+      </div>-->
+
+          <!-- <div class="container-fluid" style="margin-bottom: 90px; margin-right: -200px;">
+            <button class="btn text-white" style="margin-left: 115px;"><a href="input.html">Login</a></button>
+          </div> 
+        </li> -->
+    </form>
+  </div>
+</nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+            <img src="imgs/jetbot.jpeg" alt="" class="img-fluid" id="image" onclick="ChangeImage3()" style="margin-top: 160px; height: 75vh;">
+         <div class="row mt-4">
+            <div class="col-lg-4" style="border: 10px;">
+                <button  style="outline: none; border: 10px;" onclick="changeImage()"><img src="imgs/jetbot1.jpeg" alt="" class="img-fluid"></button>
+            </div>
+            <div class="col" style="border: 10px;">
+              <button  style="outline: none; border: 10px;" onclick="changeImage1()"><img src="imgs/jetbot2.jpeg" alt="" class="img-fluid"></button>
+            </div>
+            <div class="col" style="border: 10px;">
+              <button  style="outline: none; border: 10px;" onclick="changeImage2()"><img src="imgs/jetbot3.jpeg" alt="" class="img-fluid" style="height: 100px;"></button>
+            </div>
+         </div> 
+            </div>
+            
+            <div class="col" style="margin-top: 160px; margin-left:30px;">
+                <p><h3><b>Jet bot
+                </b></h3></p>
+                <b style="font-size: x-large; justify-content: center; align-items: center;"><span id="price"  onclick="changeprice" >Rs. 231,279</span></b>
+               <button style="margin-left: 200px; border: 5px;" data-bs-toggle="modal" data-bs-target="#exampleModal"><a href="" style="color: blue;"><i class="bi bi-share"></i></a><br><br>
+               </button><br>
+               
+               3.5k items sold <br>
+               <b>2k reviews</b><br>
+               <i class="bi bi-star-fill" style="color: gold;"></i>
+               <i class="bi bi-star-fill" style="color: gold;"></i>
+               <i class="bi bi-star-fill" style="color: gold;"></i>
+               <i class="bi bi-star-fill" style="color: gold;"></i>
+               <i class="bi bi-star-half" style="color: gold;"></i><br>
+               <b class="">Best Value for Money</b> <br>
+              
+               <!-- <b>Sierra blue</b>
+               <button class=""  style="height: 50px; width:40px;"><img src="imgs/iphone14.jpg" alt="" class="img-fluid" style="height: 100%; width: 100%;"></button>
+               <b>Sierra blue</b>
+               <button class=""  style="height: 50px; width:40px;"><img src="imgs/iphone14.jpg" alt="" class="img-fluid" style="height: 100%; width: 41px;"></button>
+               <b>Sierra blue</b>
+               <button class="b"  style="height: 50px; width:40px;"><img src="imgs/iphone14.jpg" alt="" class="img-fluid" style="height: 100%; width: 41px;"></button><br><br> -->
+               <!-- <button class="imgbtn imgbtn1">
+                <img class="imgbtn imgbtn1" src="imgs/iphone14.jpg" alt="image" onclick="changecolor1()"><b>Blue</b>
+              </button>
+               <button class="imgbtn imgbtn2">
+                <img class="imgbtn imgbtn2" src="imgs/iphone14.jpg" alt="image" onclick="changecolor2()"><b>Black</b>
+              </button>
+               <button class="imgbtn imgbtn3">
+                <img class="imgbtn imgbtn3" src="imgs/iphone14.jpg" alt="image" onclick="changecolor3()"><b>Red</b>
+              </button>
+              
+               <b></b>
+               <div class="mt-5">
+                 <button onclick="changePrice(300000)"  class="btn btn-outline-dark"><b>128gb</b></button>
+                <button onclick="changePrice(400000)"  class="btn btn-outline-dark"><b>256gb</b></button>
+                <button onclick="changePrice(450000)"  class="btn btn-outline-dark"><b>512gb</b></button>
+              </div> -->
+             
+              
+               
+               <div class="quantity-container mt-3">
+                <button class="decrement-button btn bg-black text-white"><b>-</b></button>
+                <input type="text" class="quantity-input" style="width : 35px;" value="1" min="1" max="3">
+                <button class="increment-button btn bg-black text-white"><b>+</b></button>
+              </div>            
+               <br><br>
+               <button class="btn buynow" style="width: 250px; border: 1px;">BUY NOW</button><br>
+               <button class="btn cartpp mt-1" style="width: 210px;"><b>ADD TO CART</b><i class="bi bi-cart-plus-fill"></i></button>
+               <a href="imgs/pp1.doc" download="" class="btn btn-primary mt-1" style="text-decoration: none; color: white;">
+                <i class="bi bi-download"></i>
+               </a>
+               
+            </div>
+            <div class="col" style="margin-top: 180px; margin-right: -50px;">
+                <table style=" overflow: scroll;">
+                    <tr>
+                        <td>
+                            <h2 style="font-weight: bolder; margin-left: 80px;"><b>Reviews</b></h3>
+                            <ul style="height: 400px; overflow: scroll; width: 300px;">
+
+                                <p style="font-size: 12px;"><b>Ismail</b><br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;">Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;">Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;">Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;">Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;">>Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                                <p style="font-size: 12px;"></i>Ismail<br></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;"></i>
+                                <i class="bi bi-star-fill" style="color: gold;
+                                "></i>
+                                <br>
+                                 very comfy shirt good                   </p>
+                            </ul>
+                        </td>
+                        <tr>
+                        <td>
+                        <footer class="">
+                            <FORm class="form-control">
+                            <input type="text" placeholder="Write a review....." class="" style="outline: none; border: 10px;">
+                            <button type="submit" class="btn btn-outline-primary">Submit</button>
+                        </footer>
+                    </FORm>
+                    </td>
+                </tr>
+                    </tr>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table style="margin-left: 25%;" class="mt-5">
+                        <tr>
+                            <td>
+                                <h3><b>PRODUCT DESCRIPTION</b></h3>
+                                <ul>
+                                    <li>Jet AI Object Recognition</li>
+                                    <li>Clean Station</li>
+                                    <li>Comprehensive 5-Layer Filtration</li>
+                                    <li>Intelligent Power Control</li>
+                                </ul>
+                            </td>
+                            <td>
+                              <ul class="mt-5">
+                                <li>3D Object Recognition with AI; Go/No Go zoning</li>
+                                <li>Home View Streaming Video</li>
+                                <li> Wifi Enabled</li>
+                                <li>Self Empty Clean Station</li>
+                            </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                <table style="width: 1100px; margin-left: 10%" class="mt-5">
+                    <tr>
+                        <td>
+                             Delivery
+                             <br>
+                             <i class="bi bi-geo-alt-fill" style="color: blue;"></i> <b>LOCATION</b>
+                             <span>                   <a href="" style="text-decoration: none; margin-left: 50px;">CHANGE</a></span>
+                        </td>
+                        <td>
+                            
+                            <span><i class="bi bi-wallet"></i></span>
+                            Standard Delivery Charges<br>
+                            <b>RS-1399</b>
+                        </td>
+                        <td>
+                            <span style="margin-top: -5px;"> <i class="bi bi-cash"></i></span>
+                        Payment Method
+                        <br>
+                        <b>Cash On Delivery Available</b>
+                        <a href="" style="text-decoration: none; margin-left: 30px;">CHANGE</a>
+                    </td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Services<br>
+                            <i class="bi bi-recycle" style="color: green;"></i><b> 14 days return policy </b>
+                        </td>
+                        <td>
+                            <i class="bi bi-shield-slash-fill" style="color: burlywood;"></i>
+                            Warranty<br>
+                            
+                            <b>1 Year Warranty</b>
+                        </td>
+                        <td>
+                            Seller <br><b>Samsung</b>
+                            <a href="" style="text-decoration: none;" class="ms-3">View Store <i class="bi bi-shop" style="color: blue;"></i></a>
+
+                        </td>
+                    </tr>
+                </table>               
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container-fluid my- mt-5">
+
+            <!-- Footer -->
+          <footer class="bg-black text-white">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!-- Section: Social media -->
+              <section class="mb-4 text-center">
+                <!-- Facebook -->
+                <a class="btn-floating m-1" href="#!" role="button"
+                  ><i class="bi bi-facebook btn btn-outline-primary"></i>
+                </a>
+          
+                <!-- Twitter -->
+                <a class="btn-floating m-1" href="#!" role="button"
+                  ><i class="bi bi-twitter btn btn-outline-primary"></i
+                ></a>
+          
+                <!-- Google -->
+                <a class="btn-floating m-1" href="#!" role="button"
+                  ><i class="bi bi-google btn btn-outline-warning"></i
+                ></a>
+          
+                <!-- Instagram -->
+                <a class="btn btn-outline-danger btn-floating m-1 ig" href="#!" role="button"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+          
+             
+              </section>
+          
+              <!-- Section: Form -->
+              <section class="text-center">
+                <form action="">
+                  <!--Grid row-->
+                  <div class="row d-flex justify-content-center">
+                    <!--Grid column-->
+                    <div class="col-auto">
+                      <p class="pt-2">
+                        
+                      </p>
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-md-5 col-12">
+                      <!-- Email input -->
+                     
+                    </div>
+                    <!--Grid column-->
+          
+                    <!--Grid column-->
+                    <div class="col-auto">
+                      <!-- Submit button -->
+                    
+                    </div>
+                    <!--Grid column-->
+                  </div>
+                  <!--Grid row-->
+                </form>
+              </section>
+              <!-- Section: Form -->
+          
+              <!-- Section: Text -->
+              <!-- <section class="mb-4 text-center">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                  repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                  eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+              </section> -->
+              <!-- Section: Text -->
+          
+              <!-- Section: Links -->
+              <section class="">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Customer Care</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">Help Center</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">How to buy</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Returns & Refunds</a>
+                      </li>
+                      <li>
+                        <a href="" class="text-white">Contact us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Make Money With Us</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">Sell On Liberty</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Liberty Affliate Marketing</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Dropshipping</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Work For us</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Liberty</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">Terms&Condition</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Privacy Policy</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Liberty Exclusive</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Liberty Blogs</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+          
+                  <!--Grid column-->
+                  <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Credentials</h5>
+          
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                        <a href="#!" class="text-white">NTN Number : 4012118-6</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">STRN Number : 1700401211818</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Online Shopping App</a>
+                      </li>
+                      <li>
+                        <a href="#!" class="text-white">Liberty Physical Stores</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </section>
+              <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
+          
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+              © 2020 Copyrights Reserved By
+              <a class="text-white" href="https://mdbootstrap.com/">Liberty</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+          <!-- Footer -->
+            
+          </div>
+          <!-- End of .container -->
+
+        
+        
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"><I>SHARE</I></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <i class="bi bi-whatsapp" style="color: green; padding: 20px;"></i>
+                    <i class="bi bi-instagram" style="color:   pink; padding: 15px;width: 10px;"></i>
+                    <i class="bi bi-facebook" style="color:    blue; padding: 15px;width: 10px;"></i>
+                    <i class="bi bi-messenger" style="color:   blue; padding: 15px;width: 10px;"></i>
+                    <i class="bi bi-pinterest" style="color:   red; padding: 15px;width: 10px;"></i>
+                    <i class="bi bi-google-play" style="color: orangered; padding: 15px;width: 10px;"></i>
+                    <i class="bi bi-snapchat" style="color: yellow; padding: 20px;"></i>
+                    <i class="bi bi-telegram" style="color: blue; padding: 20px;"></i>
+                 </div>
+             <div class="modal-footer">
+                    <input type="text" name="" id="text-input" value="https://www.DUBLEW.pk/products/-i211790769-s1419370264.html?spm=a2a0e.home.flashSale.2.35e34937fdK7KH">
+                    <button style="margin-left: -40px;" type="button" class="btn btn-dark" onclick="myfunction()"  id="copy-button">
+                        <i class="bi bi-clipboard"></i>
+                    </button>
+                     
+                    
+                    
+        
+        
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+        
+                    </div>
+        
+                </div> -->
+        
+
+      <script src="index.js"></script>
+      <script>
+   function changeImage()
+{
+  var img = document.getElementById('image')
+  img.src = 'imgs/jetbot1.jpeg'
+ 
+  
+}
+function changeImage1()
+{
+  var img = document.getElementById('image')
+  img.src = 'imgs/jetbot2.jpeg'
+ 
+  
+}
+function changeImage2()
+{
+  var img = document.getElementById('image')
+  img.src = 'imgs/jetbot3.jpeg'
+ 
+  
+}
+function changeImage3()
+{
+  var img = document.getElementById('image')
+  img.src = 'imgs/dwhs2.jpg'
+ 
+  
+}
+function changecolor1(){
+  var img = document.getElementById('image')
+  img.src = 'imgs/iphone14.jpg'
+}
+function changecolor2(){
+  var img = document.getElementById('image')
+  img.src = 'imgs/camcar.jpg'
+}
+function changecolor3(){
+  var img = document.getElementById('image')
+  img.src = 'imgs/canon.jpg'
+}
+;
+
+
+
+      </script>
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

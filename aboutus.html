@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Liberty Electronics</title>
+    <style>
+      #contact-toggle {
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form {
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form{
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  border: 1px solid gray;
+}
+textarea{
+
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+#contact-form input[type="submit"] {
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+} 
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #000;
+  opacity: 1;
+  color: white;
+  transform: rotateY(180deg);
+}
+.card-body{
+  height: 200px;
+}
+
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark d-flex fixed-top" style="background-color: black; opacity: 0.9;" id="navbar"> 
+    <a 
+    href="imgs/logole.jpg" 
+    class="navbar-brand " id="logo">
+     <h3 style="margin-top: 10px;"><b><img src="imgs/logole.jpg" alt="" style="width: 100px; height: 60px; margin-top: -10px; opacity: 1; z-index: 1;"> LIBERTY Electronics</b></h2></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="toggle-navigation" style="z-index: 1;">
+        <span class="navbar-toggler-icon"></span>
+
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item-active nav-item-drop d-flex">
+            <a href="aboutus.html" class="nav-link" style="margin-left: 70px;">ABOUT US</a>
+          </li>
+            <li class="nav-item">
+                <a href="compare.html" class="nav-link active" style="margin-left: 70px;"><i class="bi bi-arrow-left-right"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="navabarDropdown" 
+                role="button"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="margin-left: 70px;">
+            PRODUCTS
+            </a>
+                <ul class="dropdown-menu active"
+                aria-labelledby="navabarDropdown" style="height: 300px; width: 250px; background-color: #000; opacity: 1;">
+                    <li><a href="mobiles.html" class="dropdown-item mt-2">Mobiles</a></li>
+                    <li><a href="tvspage.html" class="dropdown-item mt-2">Televisions</a></li>
+                    <li><a href="fridges.html" class="dropdown-item mt-2">Refrigators</a></li>
+                    <li><a href="ac.html" class="dropdown-item mt-2">Air conditioners</a></li>
+                    <li><a href="fashiongagdets.html" class="dropdown-item mt-2">Fashion Gadgets</a></li>
+                    <li><a href="Drone.html" class="dropdown-item mt-2">Drones</a></li>
+                </ul>
+           
+            </li>
+            <div class="cart-item bg-black">
+            <li class="nav-item-active nav-item-drop d-flex">
+                <a href="" class="nav-link cart-item" style="margin-left: 70px;">
+                  <i class="bi bi-cart-check-fill"></i></a></span>
+                  <div class="cart-item bg-black" style="opacity: 1;">
+                    <div class="product-info" style="opacity: 1;">
+                      <div class="card bg-black" style="max-width: 540px;">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="imgs/acreview1.jpg" class="img-fluid rounded-start" alt="..." style="height: 25px;">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                              <h5 class="card-title">Samsung S22 Ultra</h5>
+                              <p class="card-text"></p>
+                         
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </li>
+            
+        </ul>
+        <div class="help">
+        <!-- <form action="" class="d-flex">
+            <input type="text"  id="navbarNav" class="form-control me-2" style="outline: none; width: 300px; height: 40px; margin-left: 100%;" placeholder="Search here...">
+        </div>
+        
+        <div class="">
+        <button type="button" id="navbarNav" class="btn btn-outline-dark searchbutton" style="background-color: black; color: white;  margin-left: 10px;"><b><i class="bi bi-search"></i></b></button>
+      </div>-->
+
+          <!-- <div class="container-fluid" style="margin-bottom: 90px; margin-right: -200px;">
+            <button class="btn text-white" style="margin-left: 115px;"><a href="input.html">Login</a></button>
+          </div>  -->
+        </li>
+    </form>
+  </div>
+</nav>
+
+
+   <div class="">
+    <div class="row">
+      <img src="imgs/aboutus.png" alt="" style="margin-top: 120px; height: 90vh;">
+    </div>
+   </div>
+<div class="container-fluid" style="margin-top: 10px;">
+<div class="row text-center">
+  <h1 style="font-weight: bolder; color: #000;"><b>The Founders</b></h1>
+
+  <div class="col-3 g-3">
+<div class="flip-card" style="margin-top: 20px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imgs/taha.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1><b>Taha Siddiqui</b></h1>
+      <p>The Founder</p>
+      
+    </div>
+  </div>
+</div>
+</div>
+  <div class="col-3 g-3">
+<div class="flip-card" style="margin-top: 20px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imgs/ishna2.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Ishna Fatima</h1>
+      <p>Our Leading Spokesperson</p>
+
+    </div>
+  </div>
+</div>
+</div>
+  <div class="col-3 g-3">
+<div class="flip-card" style="margin-top: 20px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imgs/zain.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Zain-Ul-Abideen</h1>
+      <p>Our General Manager</p>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="col-3 g-3">
+<div class="flip-card" style="margin-top: 20px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="imgs/ismail3.jpg" alt="Avatar" style="width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Ismail Jawaid</h1>
+      <p>Our CEO</p>
+     
+    </div>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="container" style="margin-top: 150px;">
+        <div class="row text-center text-black">
+          
+
+          <h1 style="font-weight: bolder;"><b>Contact</b></h1>
+            <div class="col-4 g-5">
+                <div class="card" style="height: 200px; z-index: 1;">
+                    <div class="card-body text-center bg-black text-white">
+                        <h3 class="mb-3"><b>Connect To Me</b></h3>
+                       <button type="button" class="btn btn-outline-primary mt-3 mb-3" id="contact-toggle">
+                        Click Here.....
+                       </button><br>
+                       Click here to see the contact form
+                    
+
+<div id="contact-form" style="display:none; width: 450px; z-index: 1;" class="bg-black text-white">
+  <form method="post"  class="form-control bg-black text-white">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name here...." class="bg-black text-white"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="abcxyz@example.com" class="bg-black text-white"><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" placeholder="Enter your Message here...." name="message" class="bg-black text-white"></textarea><br>
+    <p id="remaining" style="margin-left: 150px; margin-top: -20px; border-radius: 5px;">150 remaining</p>
+
+<script>
+  var textarea = document.getElementById("message");
+  var remaining = document.getElementById("remaining");
+
+  textarea.addEventListener("input", function(){
+    remaining.innerHTML = (150 - textarea.value.length) + " remaining";
+  });
+</script><br>
+
+    <form method="post" onsubmit="return showPopup()">
+      <!-- form inputs -->
+    </form>
+    
+    <div id="popup" style="display:none;">
+      <p>Thank you for your message. Our team will contact you soon.</p>
+      <button id="popup-close" class="btn btn-outline-primary">Close</button>
+    </div>
+    
+    <script>
+      function showPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+        return false;
+      }
+    
+      document.getElementById("popup-close").addEventListener("click", function(){
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+      });
+    </script>
+    <form method="post" action="submit-form.php" onsubmit="return showPopup()">
+      <!-- form inputs -->
+      <input type="submit" value="Submit" class="btn btn-outline-light mt-3">
+    </form>
+    
+    <div id="popup" style="display:none;">
+      <p>Thank you for your message. Our team will contact you soon.</p>
+      <button id="popup-close" class="btn btn-outline-danger" type="button" style="border: 10px;outline: 10px;">X</button>
+    </div>
+    
+    <script>
+      function showPopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "block";
+        return false;
+      }
+    
+      document.getElementById("popup-close").addEventListener("click", function(){
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+      });
+    </script>
+    
+  </form>
+</div>
+
+<script>
+  document.getElementById("contact-toggle").addEventListener("click", function(){
+    var contactForm = document.getElementById("contact-form");
+    if(contactForm.style.display === "none") {
+      contactForm.style.display = "block";
+    } else {
+      contactForm.style.display = "none";
+    }
+  });
+</script>
+
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-4 g-5">
+                <div class="card">
+                    <div class="card-body text-center bg-black text-white">
+                        <h3><b>Contact Us</b></h3>
+                        For any queries or complaints Contact Us Through <br>
+                        <a href="mailto:"><button class="btn btn-outline-primary mt-3">Email Us</button></a>
+                        <a href=""><button type="button" class="btn btn-outline-primary mt-3">Call Us</button></a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 g-5">
+                <div class="card">
+                    <div class="card-body text-center bg-black text-white">
+                        <h3><b>Our Shop</b></h3>
+                       Wanna Buy Physically Visit Our Store <br>
+                        <a href="https://goo.gl/maps/Bz7PPaMCJ2tXPm9SA"><button class="btn btn-outline-primary mt-4">Our Location</button></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-3 g-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, minima!</p>
+
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+    
+    <div class="w-100 my-5">
+
+      <!-- Footer -->
+    <footer class="bg-black text-white">
+      <!-- Grid container -->
+      <div class=" p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a class="btn-floating m-1" href="#!" role="button"
+            ><i class="bi bi-facebook btn btn-outline-primary"></i>
+          </a>
+    
+          <!-- Twitter -->
+          <a class="btn-floating m-1" href="#!" role="button"
+            ><i class="bi bi-twitter btn btn-outline-primary"></i
+          ></a>
+    
+          <!-- Google -->
+          <a class="btn-floating m-1" href="#!" role="button"
+            ><i class="bi bi-google btn btn-outline-warning"></i
+          ></a>
+    
+          <!-- Instagram -->
+          <a class="btn btn-outline-danger btn-floating m-1 ig" href="#!" role="button"
+            ><i class="bi bi-instagram"></i
+          ></a>
+    
+       
+        </section>
+    
+        <!-- Section: Form -->
+        <section class="text-center">
+          <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+              <!--Grid column-->
+              <div class="col-auto">
+                <p class="pt-2">
+                  
+                </p>
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-md-5 col-12">
+                <!-- Email input -->
+               
+              </div>
+              <!--Grid column-->
+    
+              <!--Grid column-->
+              <div class="col-auto">
+                <!-- Submit button -->
+              
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </form>
+        </section>
+        <!-- Section: Form -->
+    
+        <!-- Section: Text -->
+        <!-- <section class="mb-4 text-center">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas.
+          </p>
+        </section> -->
+        <!-- Section: Text -->
+    
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Customer Care</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Help Center</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">How to buy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Returns & Refunds</a>
+                </li>
+                <li>
+                  <a href="" class="text-white">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Make Money With Us</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Sell On Liberty</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Liberty Affliate Marketing</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Dropshipping</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Work For us</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Liberty</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Terms&Condition</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Liberty Exclusive</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Liberty Blogs</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Credentials</h5>
+    
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">NTN Number : 4012118-6</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">STRN Number : 1700401211818</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Online Shopping App</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Liberty Physical Stores</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyrights Reserved By
+        <a class="text-white" href="https://mdbootstrap.com/">Liberty</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+      
+    </div>
+    <!-- End of .container -->
+  
+  
+  
+  
+  
+  
+              </div>
+  
+          </div> -->
+  
+  
+      </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

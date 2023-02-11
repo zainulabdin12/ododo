@@ -1,0 +1,434 @@
+     
+       @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap');
+     
+       .help{
+        margin-bottom: -5px;
+       }
+       .searchbutton{
+        margin-bottom: 15px;
+       }
+       .card1:hover{
+            box-shadow: 20px 20px 100px -50px #000;
+            transition: 0.3s;
+          }
+          .card1:hover{
+            transform: scale(1.02);
+            transition: 1.2s;
+          }
+          button:hover{
+            outline: none;
+            color: red;
+          }
+          input{
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom-style: solid;
+            background-color: #eee;
+          }
+        
+          input:focus {
+            outline: none;
+          }
+          a{
+            text-decoration: none;
+          }
+          /* .card {
+            width: 280px;
+            
+          }
+          
+          /* On screens that are 992px or less, set the background color to blue */
+          @media screen and (max-width: 992px) {
+            .ard {
+             width: 280px;
+
+            }
+          }
+          
+          /* On screens that are 600px or less, set the background color to olive */
+          @media screen and (max-width: 600px) {
+            .cart {
+                width: 280px;
+            }
+          } */
+.zoom {
+
+  transition: transform .1s; /* Animation */
+  width: 200px;
+  height: 200px;
+  
+}
+.ig{
+  background-color: black;
+  color: purple;
+  
+}
+.ig:hover{
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  color: black;
+
+}
+.dropdown-item{
+  color: black;
+}
+.dropdown-item:hover{
+  color: black;
+}
+
+  #navbar {
+    transition: 1.0s;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+  }
+  
+  #navbar a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    font-size: 18px; 
+    line-height: 10px;
+    border-radius: 4px;
+  }
+  
+  #navbar #logo {
+    font-size: 35px;
+    font-weight: bold;
+    transition: 1.4s;
+  }
+  
+  /* #navbar a:hover { */
+    /* background-color: #ddd;
+    color: black; */
+  
+  
+  /* #navbar a.active {
+    background-color: dodgerblue;
+    color: white;
+  } */
+  
+  #navbar-right {
+    float: right;
+  }
+  
+  @media screen and (max-width: 580px) {
+    #navbar {
+      padding: 0px 0px !important;
+    }
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navbar-right {
+      float: none;
+    }
+  }
+
+  .hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+  }
+  
+  .hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+  }
+  
+  .hovereffect img {
+    display: block;
+    position: relative;
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+  }
+  
+  .hovereffect:hover img {
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /><feGaussianBlur stdDeviation="3" /></filter></svg>#filter');
+    filter: grayscale(1) blur(3px);
+    -webkit-filter: grayscale(1) blur(3px);
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .hovereffect h2 {
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hovereffect a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    border: 1px solid #fff;
+    margin: 50px 0 0 0;
+    background-color: transparent;
+  }
+  
+  .hovereffect a.info:hover {
+    box-shadow: 0 0 5px #fff;
+  }
+  
+  .hovereffect a.info, .hovereffect h2 {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+    -webkit-transition: all 0.4s ease-in;
+    transition: all 0.4s ease-in;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .hovereffect:hover a.info, .hovereffect:hover h2 {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  
+   /* Style The Dropdown Button */
+   .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .btn-2 {
+    letter-spacing: 0;
+}
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#000, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #000;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
+   .btn-1:hover{cursor: pointer}
+      .btn-1 {
+      background: transparent; outline: none;
+      position: relative;
+      border: 2px solid #111;
+      
+      overflow: hidden;
+    }
+
+    /*button:before (attr data-hover)*/
+    .btn-1:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      margin-left: 45px;
+      margin-top: -10px;
+      top: 1.1em; left: 0;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      opacity: 0;
+      transform: translate(-100%,0);
+      transition: all .3s ease-in-out;
+      font-weight: bolder;
+    }
+      /*button div (button text before hover)*/
+      .btn-1:hover .cart{opacity: 0; transform: translate(100%,0)}
+      button .cart{
+        transition: all .3s ease-in-out;
+      }
+      .card {
+        position: relative;
+        
+      }
+      
+      .image {
+        display: block;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        opacity: 0;
+        transition: .5s ease;
+        width: 100%;
+      }
+      
+      .card:hover .overlay {
+        opacity: 1;
+        width: 100%;
+      }
+      
+        .buynow{
+          outline: none;
+          background-color: darkred;
+          color: white;
+          font-weight: bold;
+          outline: 1px groove;
+        }
+        .buynow:hover{
+          background-color: transparent;
+          border-radius: 50px;
+          color: #000;
+          font-weight: bolder;
+          top: 0;
+          transition: 1s;
+          letter-spacing: 5px;
+        }
+        .cartpp{
+          background-color: #000;
+          color: white;
+        }
+        .cartpp:hover{
+          background: transparent;
+          color: blue;
+          box-shadow: #000 10px #000 10px;
+          transition: 1.5s;
+
+        }
+      
+        /* -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;  */
+
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+
+
+  .imgbtn {
+    /* button styles */
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    outline: none;
+  }
+  
+  .imgbtn img {
+    /* image styles */
+    width: 100%;
+    height: auto;
+    outline: none;
+  }
+  .imgbtn:hover{
+    color: green;
+  }
+  .imgbtn2{
+    color: green;
+  }
+  .imgbtn2:hover{
+    color: #000;
+  }
+  .imgbtn3:hover{
+    color: palevioletred;
+  }
+  #changeImage #changeImage1 #changeImage3{
+        height: 150px;
+        width: 150px;
+  }
+  .dropdown-item{
+    margin-top: 12px;
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 0px;
+  
+    position:relative;
+  }
+  
+  .product-info {
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    transform: translateY(-10px);
+    transition: transform 1.3s ease-in-out;
+    background-color: #000;
+    color: #fff;
+    opacity: 1;
+    z-index: 1;
+   
+  }
+  
+  .cart-item:hover .product-info {
+    display: block;
+    transform: translateY(0);
+    width: 25vw;
+    opacity: 1;
+    z-index: 1;
+    height: 30vh;
+    overflow: scroll;
+  }
+
+  
